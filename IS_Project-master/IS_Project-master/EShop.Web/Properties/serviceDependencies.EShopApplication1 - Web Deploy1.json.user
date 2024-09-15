@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "mssql3": {
+      "restored": true,
+      "restoreTime": "2024-09-13T21:52:53.2114223Z"
+    }
+  },
+  "parameters": {
+    "mssql3.subscriptionId": {
+      "Name": "mssql3.subscriptionId",
+      "Type": "subscription",
+      "Value": "bf24a3ae-db06-4fe6-b304-66346740c26d"
+    },
+    "mssql3.resourceGroupName": {
+      "Name": "mssql3.resourceGroupName",
+      "Type": "resourceGroup",
+      "Value": "EShopWeb20240913203416ResourceGroup"
+    }
+  }
+}

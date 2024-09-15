@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "mssql2": {
+      "serviceConnectorResourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Web/sites/EShopApplication1/providers/Microsoft.ServiceLinker/linkers/ConnectionStringsDefaultConnection3_14A4D42AA4",
+      "secretStore": "AzureAppSettings",
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/bookstoreappserver/databases/BookStoreapp",
+      "type": "mssql.azure",
+      "connectionId": "ConnectionStrings:DefaultConnection3"
+    }
+  }
+}

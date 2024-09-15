@@ -1,0 +1,15 @@
+C:\Users\Administrator\Desktop\IS_Project-master\IS_Project-master\EShop.Repository\bin\Release\net8.0\EShop.Repository.deps.json
+C:\Users\Administrator\Desktop\IS_Project-master\IS_Project-master\EShop.Repository\bin\Release\net8.0\EShop.Repository.dll
+C:\Users\Administrator\Desktop\IS_Project-master\IS_Project-master\EShop.Repository\bin\Release\net8.0\EShop.Repository.pdb
+C:\Users\Administrator\Desktop\IS_Project-master\IS_Project-master\EShop.Repository\bin\Release\net8.0\EShop.Domain.dll
+C:\Users\Administrator\Desktop\IS_Project-master\IS_Project-master\EShop.Repository\bin\Release\net8.0\EShop.Domain.pdb
+C:\Users\Administrator\Desktop\IS_Project-master\IS_Project-master\EShop.Repository\obj\Release\net8.0\EShop.Repository.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\IS_Project-master\IS_Project-master\EShop.Repository\obj\Release\net8.0\EShop.Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\Desktop\IS_Project-master\IS_Project-master\EShop.Repository\obj\Release\net8.0\EShop.Repository.AssemblyInfoInputs.cache
+C:\Users\Administrator\Desktop\IS_Project-master\IS_Project-master\EShop.Repository\obj\Release\net8.0\EShop.Repository.AssemblyInfo.cs
+C:\Users\Administrator\Desktop\IS_Project-master\IS_Project-master\EShop.Repository\obj\Release\net8.0\EShop.Repository.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\IS_Project-master\IS_Project-master\EShop.Repository\obj\Release\net8.0\EShop.Re.5AE75352.Up2Date
+C:\Users\Administrator\Desktop\IS_Project-master\IS_Project-master\EShop.Repository\obj\Release\net8.0\EShop.Repository.dll
+C:\Users\Administrator\Desktop\IS_Project-master\IS_Project-master\EShop.Repository\obj\Release\net8.0\refint\EShop.Repository.dll
+C:\Users\Administrator\Desktop\IS_Project-master\IS_Project-master\EShop.Repository\obj\Release\net8.0\EShop.Repository.pdb
+C:\Users\Administrator\Desktop\IS_Project-master\IS_Project-master\EShop.Repository\obj\Release\net8.0\ref\EShop.Repository.dll

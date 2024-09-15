@@ -1,0 +1,51 @@
+﻿@model IEnumerable<EShop.Domain.Domain.Publishers>
+
+@{
+    ViewData["Title"] = "Publishers";
+}
+
+<div class="container mt-4">
+    <h1 class="mb-4">@ViewData["Title"]</h1>
+
+   
+
+    <div class="row">
+        @foreach (var item in Model)
+        {
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm">
+                    <div class="card-header bg-secondary text-white">
+                        <h5 class="card-title">Publisher ID: @item.Id</h5>
+                    </div>
+                    <div class="card-body">
+                        <h6 class="card-subtitle mb-2 text-muted">Book</h6>
+                        <p class="card-text">@item.Book.Title</p>
+
+                        <h6 class="card-subtitle mb-2 text-muted">Authors ID</h6>
+                        <p class="card-text">@item.AuthorsId</p>
+
+                        <h6 class="card-subtitle mb-2 text-muted">Publish Date</h6>
+                        <p class="card-text">@item.PublishDate</p>
+
+                        <h6 class="card-subtitle mb-2 text-muted">Order Date</h6>
+                        <p class="card-text">@item.OrderDate</p>
+
+                        <h6 class="card-subtitle mb-2 text-muted">Rent Amount</h6>
+                        <p class="card-text">@item.RentAmount</p>
+                    </div>
+                    <div class="card-footer">
+                        <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning btn-sm">
+                            <i class="bi bi-pencil"></i> Edit
+                        </a>
+                        <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-info btn-sm">
+                            <i class="bi bi-eye"></i> Details
+                        </a>
+                        <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger btn-sm">
+                            <i class="bi bi-trash"></i> Delete
+                        </a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

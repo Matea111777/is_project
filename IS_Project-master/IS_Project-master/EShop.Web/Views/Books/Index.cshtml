@@ -1,0 +1,58 @@
+﻿@model IEnumerable<EShop.Domain.Domain.Book>
+
+@{
+    ViewData["Title"] = "Books";
+}
+
+<div class="container mt-4">
+    <h1 class="mb-4">@ViewData["Title"]</h1>
+
+    <p>
+        <a asp-action="Create" class="btn btn-primary mb-4">Create New Book</a>
+    </p>
+
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        @foreach (var item in Model)
+        {
+            <div class="col">
+                <div class="card h-100">
+                    <img src="@item.BookImage" class="card-img-top" alt="@item.Title" style="max-height: 200px; object-fit: cover;" />
+                    <div class="card-body">
+                        <h5 class="card-title">@Html.DisplayFor(modelItem => item.Title)</h5>
+                        <p class="card-text">@Html.DisplayFor(modelItem => item.Description)</p>
+                        <p class="card-text">
+                            <strong>Year of Release:</strong> @Html.DisplayFor(modelItem => item.yearOfRelease) <br />
+                            <strong>Genre:</strong> @Html.DisplayFor(modelItem => item.genre) <br />
+                            <strong>Price:</strong> @Html.DisplayFor(modelItem => item.Price) <br />
+                            <strong>Available:</strong> @Html.DisplayFor(modelItem => item.IsAvailable)
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <!-- First row: Edit, Delete, Details -->
+                        <div class="row mb-2">
+                            <div class="col">
+                                <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning w-100">Edit</a>
+                            </div>
+                            <div class="col">
+                                <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-info text-white w-100">Details</a>
+                            </div>
+                            <div class="col">
+                                <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger w-100">Delete</a>
+                            </div>
+                        </div>
+
+                        <!-- Second row: Publish, Add to Cart -->
+                        <div class="row">
+                            <div class="col">
+                                <a asp-action="Create" asp-controller="Publishers" asp-route-id="@item.Id" class="btn btn-primary w-100 @(item.IsAvailable.Value ? true : "disabled")">Publish</a>
+                            </div>
+                            <div class="col">
+                                <a asp-controller="Books" asp-action="AddToCart" asp-route-id="@item.Id" class="btn btn-secondary w-100">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

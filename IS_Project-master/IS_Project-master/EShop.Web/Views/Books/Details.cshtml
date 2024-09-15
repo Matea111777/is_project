@@ -1,0 +1,47 @@
+﻿@model EShop.Domain.Domain.Book
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<div class="container mt-4">
+    <h1 class="mb-4">@ViewData["Title"]</h1>
+
+    <div class="card shadow-lg">
+        <div class="card-header bg-info text-white">
+            <h4>Book Details</h4>
+        </div>
+        <div class="card-body">
+            <dl class="row">
+                <dt class="col-sm-3">Title</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.Title)</dd>
+
+                <dt class="col-sm-3">Description</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.Description)</dd>
+
+                <dt class="col-sm-3">Year of Release</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.yearOfRelease)</dd>
+
+                <dt class="col-sm-3">Author</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.AuthorId)</dd>
+
+                <dt class="col-sm-3">Genre</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.genre)</dd>
+
+                <dt class="col-sm-3">Price</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.Price)</dd>
+
+                <dt class="col-sm-3">Availability</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.IsAvailable)</dd>
+            </dl>
+        </div>
+        <div class="card-footer">
+            <a asp-action="Edit" asp-route-id="@Model?.Id" class="btn btn-warning">
+                <i class="bi bi-pencil"></i> Edit
+            </a>
+            <a asp-action="Index" class="btn btn-secondary">
+                <i class="bi bi-arrow-left"></i> Back to List
+            </a>
+        </div>
+    </div>
+</div>
